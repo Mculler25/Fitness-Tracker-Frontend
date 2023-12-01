@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import placholder from "./images/placeholderChart.jpg"
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main className="container">
+      <header className="homeHeader">
+        <h3>FitnessTracker</h3>
+        <button className="logInButton">Log In</button>
       </header>
-    </div>
+      <section className="mainHome">
+        <div>
+          <h1>Fitness Tracking</h1>
+          <p>I created this fitness tracker as a cool project to help <br></br>me become healthier and also improve my coding skills.</p>
+        </div>
+        <div>
+          <img src={placholder} className="homeImg"></img>
+        </div>
+      </section>
+    </main>
   );
 }
 
